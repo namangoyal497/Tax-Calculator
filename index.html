@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Calculator</title>
+  <link rel="stylesheet" href="index.css"> </head>
+<body>
+  <h1 class="heading" >Tax Calculator</h1>
+  <form id="tax-form" >
+    <div class="input-group">
+      <div class="label-with-icon" title="Gross annual income is the amount you earn each year before any taxes or other deductions are applied. ">
+        <label for="gross-income">Gross Annual Income (in Lakhs):</label>
+        <span class="info-icon"><i class="fa-regular fa-circle-question"></i></span>
+      </div>
+      <div class="input-box">
+      <input type="text" id="gross-income" name="grossIncome" required>
+      <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+      </div>
+    </div>
+    <div class="input-group">
+      <div class="label-with-icon" title="Extra income">
+        <label for="extra-income">Extra Income (in Lakhs):</label>
+        <span class="info-icon"><i class="fa-regular fa-circle-question"></i></span>
+      </div>
+      <div class="input-box">
+      <input type="text" id="extra-income" name="extraIncome">
+      <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+    </div>
+    </div>
+    <div class="input-group">
+      <div class="label-with-icon" title="Deduction ">
+        <label for="deductions">Deductions (in Lakhs):</label>
+        <span class="info-icon"><i class="fa-regular fa-circle-question"></i></span>
+      </div>
+      <div class="input-box">
+      <input type="text" id="deductions" name="deductions">
+      <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+    </div>
+  </div>
+    <div class="input-group">
+      <div><label for="age">Age:</label></div>
+      <div class="age-list">
+      <select id="age" name="age" required>
+        <option value="">Select Age Range</option>
+        <option value=1>&lt; 40</option>
+        <option value=2>&#8805;40 &amp; &lt;60</option>
+        <option value=3>&#8805; 60</option>
+      </select>
+      <span class="error-icon"></span>
+      </div>
+    </div>
+    <button type='submit'>Calculate Tax</button>
+  </form>
+ 
+  <div id="result-modal" class="modal">  
+    <div class="modal-content">
+      <h1>Your overall Income will be:</h1>
+       <span id="tax-amount"></span> 
+      <h4>after tax deductions</h4>
+      <button type="button" id="close-modal"><a href="/">Close</a></button>
+    </div>
+  </div> 
+
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/18c7dfebc9.js" crossorigin="anonymous"></script> 
+</body>
+</html> 

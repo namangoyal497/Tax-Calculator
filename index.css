@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: paleturquoise;
+    border:2px solid black;
+    padding: 10px;
+    margin-left:400px;
+    margin-right: 400px;
+    margin-top: 100px;
+  }
+  .heading{
+    text-align: center;
+    color:#0D9276;
+  }
+  form{
+    display: block;
+    margin-left: 23px;
+  }
+  .input-group {
+    margin-bottom: 10px;
+   
+    align-items: center;
+  }
+  
+ 
+  
+  .input-group input,
+  .input-group select{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width:90%;
+  }
+  #age{
+    margin-top: 10px;
+    width:92%;
+  }
+  .error-icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+   
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .input-box{
+    display: flex;
+  }
+  
+  .modal-content{
+    text-align: center;
+  }
+  .tooltip {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+
+  #result-modal{
+    display:none;
+    align-items: center;
+  }
+  .label-with-icon {
+    position: relative;
+  }
+  
+  .info-icon {
+    position: absolute;
+    top: 0;
+     font-size: 16px;
+    cursor: pointer;
+  }
+  .btn{
+    margin: 10px;
+    align-items: center;
+  }
+  .info-icon:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: 20px;   
+    left: -50%; 
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 999;
+    opacity: 0.9;
+    display: block;
+  }
+ button{
+    background-color: #8644A2;
+    
+  }
+  a{
+    text-decoration: none;
+    color:white;
+  }

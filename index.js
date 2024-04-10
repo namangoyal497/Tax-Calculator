@@ -52,7 +52,7 @@ function calculateTax(event) {
     }
     taxAmount = taxableIncome * (taxRate / 100)*100000;
   }
-    tamount.innerText=taxAmount;
+    tamount.innerText=Math.round(taxAmount);
 }
 // Event listener for form submission
 form.addEventListener('submit', calculateTax);
@@ -60,6 +60,10 @@ form.addEventListener('submit', calculateTax);
 document.getElementById('close-modal').addEventListener('click', function() {
   resultModal.style.display = 'none';
   form.style.display='block';
+  document.getElementById('gross-income').value=null;
+  document.getElementById('extra-income').value=null;
+  document.getElementById('deductions').value=null;
+  document.getElementById('age').value=0;
 });
 
 
